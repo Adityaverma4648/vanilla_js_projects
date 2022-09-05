@@ -1,0 +1,62 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-height: 100vh;
+  max-width: 100vw;
+  background: #283048; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #container {
+  position: relative;
+  min-height: 45vh;
+  min-width: 50vw;
+}
+body #container .heading {
+  width: 100%;
+  text-align: center;
+}
+body #container .heading h3 {
+  font-size: 70px;
+}
+body #container div {
+  display: flex;
+  flex-direction: column;
+}
+body #container div .number {
+  text-align: center;
+  font-size: 100px;
+  color: #fff;
+}
+body #container div .button-group {
+  padding: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body #container div .button-group button {
+  width: 30%;
+  padding: 10px 1rem;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body #container div .button-group .reset {
+  background-color: rgb(101, 101, 221);
+}
+body #container div .button-group .increase {
+  background-color: rgb(0, 179, 0);
+}
+body #container div .button-group .decrease {
+  background-color: rgb(255, 63, 63);
+}/*# sourceMappingURL=style.css.map */
