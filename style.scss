@@ -21,7 +21,7 @@ body{
       align-items: center;
          
            //container div
-           #container{
+           .container{
             position: relative;
                min-height: 45vh;
                min-width: 50vw;
@@ -30,9 +30,23 @@ body{
                .heading{
                 width: 100%;
                 text-align: center;
+                color: #e7e7e7;
                    h3{  
                         font-size: 70px;
                    }
+               }
+               .time{
+                display: flex;
+                text-align: center;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                 span{
+                    font-size: 100px;
+                    color: #fff;
+                    margin: 0px 10px;
+                 }
                }
                div{
                 display: flex;
@@ -61,10 +75,14 @@ body{
                     .reset{
                         background-color: rgb(101, 101, 221);
                     }
-                    .increase{
+                    .increase,.start{
                         background-color: rgb(0, 179, 0)
                     }
                     .decrease{
+                        background-color: rgb(255, 63, 63);
+                    }
+                    .stop{
+                        // background-color: ;
                         background-color: rgb(255, 63, 63);
                     }
                 }

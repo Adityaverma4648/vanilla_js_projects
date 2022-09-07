@@ -14,28 +14,42 @@ body {
   justify-content: center;
   align-items: center;
 }
-body #container {
+body .container {
   position: relative;
   min-height: 45vh;
   min-width: 50vw;
 }
-body #container .heading {
+body .container .heading {
   width: 100%;
   text-align: center;
+  color: #e7e7e7;
 }
-body #container .heading h3 {
+body .container .heading h3 {
   font-size: 70px;
 }
-body #container div {
+body .container .time {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+body .container .time span {
+  font-size: 100px;
+  color: #fff;
+  margin: 0px 10px;
+}
+body .container div {
   display: flex;
   flex-direction: column;
 }
-body #container div .number {
+body .container div .number {
   text-align: center;
   font-size: 100px;
   color: #fff;
 }
-body #container div .button-group {
+body .container div .button-group {
   padding: 5%;
   width: 100%;
   display: flex;
@@ -43,7 +57,7 @@ body #container div .button-group {
   align-items: center;
   justify-content: space-evenly;
 }
-body #container div .button-group button {
+body .container div .button-group button {
   width: 30%;
   padding: 10px 1rem;
   border: none;
@@ -51,12 +65,15 @@ body #container div .button-group button {
   border-radius: 5px;
   cursor: pointer;
 }
-body #container div .button-group .reset {
+body .container div .button-group .reset {
   background-color: rgb(101, 101, 221);
 }
-body #container div .button-group .increase {
+body .container div .button-group .increase, body .container div .button-group .start {
   background-color: rgb(0, 179, 0);
 }
-body #container div .button-group .decrease {
+body .container div .button-group .decrease {
+  background-color: rgb(255, 63, 63);
+}
+body .container div .button-group .stop {
   background-color: rgb(255, 63, 63);
 }/*# sourceMappingURL=style.css.map */
