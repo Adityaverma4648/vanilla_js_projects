@@ -1,28 +1,50 @@
 window.onload = function () {
 
-
+    // topics covered
+    // document.querySelector()
+    // addEventListener()
+    // classList.toggle()
+    // classList.remove()
 
     //  toggle logic
 
     // variables
-    var burger = document.getElementById('burger');
-    var close = document.getElementById('close');
-    var sidebar = document.getElementById('sidebar');
+    // var burger = document.getElementById('burger');
+    // var close = document.getElementById('close');
+    // var sidebar = document.getElementById('sidebar');
     
-    // function
-    burger.onclick = function(){
-        var des = Boolean(sidebar.style.display == "none");
-        if(des){
-            sidebar.style.display = "block";
-        }
-        else{
-            sidebar.style.display = "none";
-        }
+    // function   my old logic how i would have done this
+    // burger.onclick = function(){
+    //     var des = Boolean(sidebar.style.display == "none");
+    //     if(des){
+    //         sidebar.style.display = "block";
+    //     }
+    //     else{
+    //         sidebar.style.display = "none";
+    //     }
+    // }
+
+    // close.onclick = function(){
+    //         sidebar.style.display = "none";
+    //     }
+
+
+
+    //  new logic
+    var burger = document.querySelector('#burger');
+    var close = document.querySelector('#close');
+
+
+     burger.onclick = function (){
+        console.log("clicked");
+        var sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle("removesidebar");
     }
 
     close.onclick = function(){
-            sidebar.style.display = "none";
-        }
+        var sidebar = document.querySelector('#sidebar');
+        sidebar.classList.add("removesidebar")
+    }
 
 // ----------------------------------------------------------------
     //  slideshow

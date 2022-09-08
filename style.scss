@@ -76,6 +76,9 @@ body{
         align-items: center;
         justify-content: center;
         // background-color: red;
+
+        
+
         .sidebar{
             z-index: 9999;
                min-width: 28vw;
@@ -128,6 +131,10 @@ body{
                   }
                }
         }
+        .removesidebar{
+            display: none;
+            transition: all 0.4s ease-in-out;
+         }
         .content{
             width: 68vw;
             height: 70vh;

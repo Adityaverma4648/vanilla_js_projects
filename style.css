@@ -114,6 +114,10 @@ body .sidebarcontainer .sidebar .socials i {
   padding: 0px 10px;
   cursor: pointer;
 }
+body .sidebarcontainer .removesidebar {
+  display: none;
+  transition: all 0.4s ease-in-out;
+}
 body .sidebarcontainer .content {
   width: 68vw;
   height: 70vh;
