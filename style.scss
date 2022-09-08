@@ -8,18 +8,69 @@
 
 body{
     // dimensions---------------------------------------
-     max-height: 100vh;
-     max-width: 100vw;
+     height: 100vh;
+     width: 100vw;
     // background color----------------------------------
     background: #283048;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     // placement of child divs
-      display: flex;
-      justify-content: center;
-      align-items: center;
-         
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+      // navbar
+      nav{
+        max-width: 100vw;
+        max-height: 55px;
+        display: flex;
+        .logo{
+            width: 20%;
+            text-align: left;
+            padding: 5px 1rem;
+            font-size: 20px;
+            font-weight: 900;
+            background: #FEAC5E;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        ul {
+            width: 80%;
+            display: flex;
+            justify-content: right;
+            padding: 0px 2rem;
+            li{
+                padding: 5px 1rem ;
+                list-style: none;
+                 a{
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: #fff;
+                 }
+            }
+        }
+      }   
+      #animation {
+        height: 40vh;
+        min-width:100vw;
+        background-color: #283048;
+
+
+      }
+      #explore{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            text-decoration:none;
+            font-size:200px;
+        }
+      }
+
+
            //container div
            .container{
             position: relative;
