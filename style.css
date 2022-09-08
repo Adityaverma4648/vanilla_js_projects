@@ -57,6 +57,75 @@ body #explore a {
   text-decoration: none;
   font-size: 200px;
 }
+body .sidebarcontainer {
+  min-width: 100vw;
+  height: 94vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .sidebarcontainer .sidebar {
+  min-width: 28vw;
+  min-height: 70vh;
+  background-color: #64106d;
+  display: flex;
+  flex-direction: column;
+}
+body .sidebarcontainer .sidebar .logo {
+  width: 100%;
+  height: 10vh;
+  font-size: 21px;
+  font-weight: 900;
+  padding: 1rem 1rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+body .sidebarcontainer .sidebar .logo i {
+  cursor: pointer;
+}
+body .sidebarcontainer .sidebar ul {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .sidebarcontainer .sidebar ul li {
+  list-style: none;
+  padding: 1.5rem 0px;
+}
+body .sidebarcontainer .sidebar ul li a {
+  color: rgb(222, 222, 222);
+  text-decoration: none;
+  font-size: 21px;
+}
+body .sidebarcontainer .sidebar ul li a:hover {
+  transition: all 0.3s ease-in-out;
+  color: #eeb177;
+}
+body .sidebarcontainer .sidebar .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .sidebarcontainer .sidebar .socials i {
+  padding: 0px 10px;
+}
+body .sidebarcontainer .content {
+  width: 68vw;
+  height: 70vh;
+  background-color: #5a5a5a;
+  display: flex;
+  flex-direction: column;
+}
+body .sidebarcontainer .content .burger {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
 body .container {
   position: relative;
   min-height: 45vh;
