@@ -23,65 +23,80 @@
 </head>
 <body>
    <nav class="navbar" id="navbar">
-    <div class="logo">
-        Vanilla javascript projects
-    </div>
+      <div class="logo">
+         Vanilla javascript projects
+     </div>
             <!-- im gonna use a bit of ajax here as well -->
             <ul class="navlists">
                 <li class="navlinks">
-                  <a href="#index.html" class="link">
+                  <a href="index.html" class="link">
                      Home
                    </a>
                 </li>
                 <li class="navlinks">
-                  <a href="#001.html" class="link">
+                  <a href="#" class="link">
+                     About
+                   </a>
+                </li>
+                <li class="navlinks">
+                  <a href="001.html" class="link">
                      ManualCounter
                    </a>
                 </li>
                 <li class="navlinks">
-                  <a href="#002.html" class="link">
+                  <a href="002.html" class="link">
                      TimeCounter
                    </a>
                 </li>
                 <li class="navlinks">
-                  <a href="#index" class="link">
-                     Home
+                  <a href="#" class="link">
+                     SideBar
                    </a>
                 </li>
                 <li class="navlinks">
-                  <a href="#index" class="link">
-                     Home
+                  <a href="004.html" class="link">
+                     FAQ page
                    </a>
                 </li>
+                
+                <li class="navlinks">
+                  <a href="#index" class="link">
+                     See All
+                     <span style="margin: 0px 2px;font-size: 16px;">
+                        <i class="fa fa-arrow-right"></i>
+                     </span>
+                   </a>
+                </li>
+                
             </ul>
    </nav>
    <div class="sidebarcontainer">
-              <div class="sidebar">
+              <div class="sidebar" id="sidebar">
                  <div class="logo">
                     <span>
-                     LOGO
+                     Sidebar
                     </span>
-                    <i class="fa fa-close"></i>
+                    <i class="fa fa-close" id="close"></i>
                  </div>
                  <ul class="list">
                       <li class="links">
-                       <a href="#" class="link">
-                            Home 
+                       <a href="#" class="link" id="btn1">
+                            potrait 1
                        </a>
                      </li>
                      <li class="links">
-                        <a href="#" class="link">
-                             About
+                        <a href="#" class="link" id="btn2">
+                            potrait 2
                         </a>
                       </li>
                       <li class="links">
-                        <a href="#" class="link">
-                             Projects
+                        <a href="#" class="link" id="btn3">
+                            potrait 3
                         </a>
                       </li>
                       <li class="links">
-                        <a href="#" class="link">
-                             Contact
+                        <a href="#" class="link" id="btn4">
+                            potrait 4
                         </a>
                       </li>
                  </ul>
@@ -97,9 +112,24 @@
               </div>
               <div class="content" style="color: #fff;font-size:25px;">
                <i class="fa fa-bars burger" id="burger" style="cursor: pointer;"></i>
+               <div class="slideshow">
+                  <div id="001">
+                     <img src="./001.png" alt="img1" id="img001">
+                  </div>
+                  <div id="002">
+                     <img src="./002.png" alt="img2" id="img002">
+                  </div>
+                  <div id="003">
+                     <img src="./003.png" alt="img3" id="img003">
+                  </div>
+                  <div id="004">
+                     <img src="./004.png" alt="img4" id="img004">
+                  </div>
+
+               </div>
               </div>   
    </div>
 
-    <script src="index.js"></script>
+    <script src="003.js"></script>
 </body>
 </html>

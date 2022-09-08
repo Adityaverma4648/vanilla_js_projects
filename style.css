@@ -65,6 +65,7 @@ body .sidebarcontainer {
   justify-content: center;
 }
 body .sidebarcontainer .sidebar {
+  z-index: 9999;
   min-width: 28vw;
   min-height: 70vh;
   background-color: #64106d;
@@ -111,6 +112,7 @@ body .sidebarcontainer .sidebar .socials {
 }
 body .sidebarcontainer .sidebar .socials i {
   padding: 0px 10px;
+  cursor: pointer;
 }
 body .sidebarcontainer .content {
   width: 68vw;
@@ -118,6 +120,7 @@ body .sidebarcontainer .content {
   background-color: #5a5a5a;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 body .sidebarcontainer .content .burger {
   padding: 1rem;
@@ -125,6 +128,44 @@ body .sidebarcontainer .content .burger {
   display: flex;
   align-items: center;
   justify-content: right;
+}
+body .sidebarcontainer .content .slideshow {
+  height: 62vh;
+  width: 68vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+body .sidebarcontainer .content .slideshow div {
+  height: 98%;
+  width: 66vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .sidebarcontainer .content .slideshow div img {
+  height: 100%;
+}
+body .faqCont {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .faqCont h5 {
+  color: #fff;
+  font-size: 25px;
+  padding: 3px 0px;
+  border-bottom: 2px solid #e7e7e7;
+}
+body .faqCont div {
+  margin: 10px 0px;
+  width: 40vw;
+  height: 40vh;
+  background-color: rgb(194, 194, 194);
 }
 body .container {
   position: relative;
