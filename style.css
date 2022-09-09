@@ -159,6 +159,12 @@ body .faqCont {
   justify-content: center;
   align-items: center;
 }
+body .faqCont #edit {
+  width: 40vw;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
 body .faqCont h5 {
   color: #fff;
   font-size: 25px;
@@ -166,10 +172,90 @@ body .faqCont h5 {
   border-bottom: 2px solid #e7e7e7;
 }
 body .faqCont div {
+  position: relative;
   margin: 10px 0px;
   width: 40vw;
-  height: 40vh;
+  height: 45vh;
   background-color: rgb(194, 194, 194);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .faqCont div .cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .faqCont div .cont .controls {
+  height: auto;
+}
+body .faqCont div .cont .controls i {
+  padding: 1rem 1rem;
+  margin: 0px 1rem;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+body .faqCont div .cont .content {
+  width: 98%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .faqCont div .cont .content .name {
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+}
+body .faqCont div .cont .content .profession {
+  font-size: 18px;
+  color: #283048;
+}
+body .faqCont div .cont .img {
+  max-width: 200px;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #5068aa;
+  align-items: center;
+}
+body .faqCont div .cont .img i {
+  z-index: 99;
+  position: relative;
+  margin-top: -11.5rem;
+  margin-left: -6rem;
+  font-size: 25px;
+}
+body .faqCont div .cont .img img {
+  height: 200px;
+  width: auto;
+  position: absolute;
+}
+body .faqCont .dynamicFetch {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+body .faqCont .dynamicFetch form h1 {
+  max-width: 75vw;
+}
+body .faqCont .dynamicFetch form .formCont {
+  background-color: none;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+body .faqCont .dynamicFetch form .formCont input, body .faqCont .dynamicFetch form .formCont textArea {
+  width: 19vw;
+  padding: 5px 10px;
+  border: none;
+  margin: 0px 10px;
 }
 body .container {
   position: relative;
