@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatingModal</title>
+        <!-- google fonts------------------------------------------------- -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+        
+        <!-- ------------------------------------------------------------- -->
+    
+        <!-- styles.scss-------------------------------------------------  -->
+         <link rel="stylesheet" href="style.css">
+         <!-- ------------------------------------------------------------ -->
+         <!-- font awsome  -->
+         <script src="https://kit.fontawesome.com/8dc03a4776.js" crossorigin="anonymous"></script>
+         <!-- ends here -->
+    
+    
+</head>
+<body>
+    <!-- navbar ----------------------->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+           Vanilla javascript projects
+       </div>
+              <!-- im gonna use a bit of ajax here as well -->
+              <ul class="navlists">
+                  <li class="navlinks">
+                    <a href="index.html" class="link">
+                       Home
+                     </a>
+                  </li>
+                  <li class="navlinks">
+                    <a href="#" class="link">
+                       About
+                     </a>
+                  </li>
+                  <li class="navlinks">
+                    <a href="001.html" class="link">
+                       ManualCounter
+                     </a>
+                  </li>
+                  <li class="navlinks">
+                    <a href="002.html" class="link">
+                       TimeCounter
+                     </a>
+                  </li>
+                  <li class="navlinks">
+                    <a href="003.html" class="link">
+                       SideBar
+                     </a>
+                  </li>
+                  <li class="navlinks">
+                    <a href="#" class="link">
+                       FAQ page
+                     </a>
+                  </li>
+                  
+                  <li class="navlinks">
+                    <a href="#index" class="link">
+                       See All
+                       <span style="margin: 0px 2px;font-size: 16px;">
+                          <i class="fa fa-arrow-right"></i>
+                       </span>
+                     </a>
+                  </li>
+                  
+              </ul>
+     </nav>
+     <!-- navbar ends here---------- -->
+    <div class="modalContainer">
+           <div class="cont" id="cont">
+              <button type="button" id="modal" class="modal">
+                  Show modal
+              </button>
+           </div>
+           <div class="modal" class="modal" id="modal">
+                <i class="fa fa-close" id="close"></i>
+               <h1 class="heading">
+                  Modal Heading
+               </h1>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto distinctio beatae, assumenda tempore recusandae dolores, corrupti adipisci repudiandae ad at excepturi aperiam, earum perspiciatis modi iste quibusdam maiores minus similique. Deleniti deserunt nemo quas tempore, inventore ab modi iste, nesciunt vero ea veritatis beatae eaque.
+                  <br>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure deserunt quia asperiores illum possimus molestiae minima rerum reprehenderit minus itaque earum nam nostrum laudantium, in quos ut optio quidem dolorum aperiam eum quisquam cum corporis sint. Ipsam aliquam quae quo at nobis voluptates expedita necessitatibus.
+                  <br>
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quisquam perspiciatis neque, nihil quaerat deserunt praesentium rerum eius eligendi, placeat esse aliquam. Fuga adipisci, pariatur quisquam expedita unde eligendi delectus rerum harum dolorum odit? A sapiente earum cumque voluptates quia autem quisquam labore aliquam ducimus.
+
+               </p>
+               <div class="btnCont">
+                   <button type="button" class="btn" id="btn">
+                      click me!
+                   </button>
+               </div>
+
+           </div>
+    </div>
+    <!-- <script src="005.js"></script>
+     -->
+     <script src="005.js"></script>
+</body>
+</html>

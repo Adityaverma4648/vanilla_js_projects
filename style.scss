@@ -10,6 +10,7 @@ body{
     // dimensions---------------------------------------
      height: 100vh;
      width: 100vw;
+     overflow: hidden;
     // background color----------------------------------
     background: #283048;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
@@ -350,5 +351,95 @@ body{
 
 
 
-        //-----------------------006.html    
+        //-----------------------005.html
+        .modalContainer{
+            height: 95vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: (linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url('./bg.jpg'));
+            background-position: center;
+            background-repeat: no-repeat;
+            .cont{
+                position: absolute;
+                height: 30vh;
+                width: 30vw;
+                background-color: #a9a9a9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button{
+                    width: 8rem;
+                    height: 4rem;
+                    border: none;
+                    background-color: #283048;
+                    padding: 10px 1rem;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    color: rgb(213, 213, 213);
+                }
+
+            }
+
+            .modal{
+                height: 60vh;
+                width: 60vw;
+                position: relative;
+                background-color: #a4a4a4;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                i{
+                    width: 100%;
+                    text-align: right;
+                    padding: 3rem ;
+                    font-size: 28px;
+                    cursor: pointer;
+                }
+                h1{
+                    padding: 10px 0px;
+                    // color: #e7e7e7;
+                    background: #40E0D0;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    
+                     background-clip: text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                }
+                p{
+                    width: 80%;
+                    text-align: center;
+                    background: #40E0D0;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                     background-clip: text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                }
+                .btnCont{
+                    padding: 3rem 0px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    button{
+                        padding: 10px 8rem;
+                        color: #fff;
+                        border: none;
+                        border-radius: 5px;
+
+                        background: #40E0D0;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    }
+
+                }
+            }
+            .modalremover{
+                display: none;
+            }
+        }    
 }

@@ -8,6 +8,7 @@
 body {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   background: #283048; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -237,26 +238,6 @@ body .faqCont div .cont .img img {
   width: auto;
   position: absolute;
 }
-body .faqCont .dynamicFetch {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-body .faqCont .dynamicFetch form h1 {
-  max-width: 75vw;
-}
-body .faqCont .dynamicFetch form .formCont {
-  background-color: none;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-}
-body .faqCont .dynamicFetch form .formCont input, body .faqCont .dynamicFetch form .formCont textArea {
-  width: 19vw;
-  padding: 5px 10px;
-  border: none;
-  margin: 0px 10px;
-}
 body .container {
   position: relative;
   min-height: 45vh;
@@ -319,4 +300,85 @@ body .container div .button-group .decrease {
 }
 body .container div .button-group .stop {
   background-color: rgb(255, 63, 63);
+}
+body .modalContainer {
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("./bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body .modalContainer .cont {
+  position: absolute;
+  height: 30vh;
+  width: 30vw;
+  background-color: #a9a9a9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .modalContainer .cont button {
+  width: 8rem;
+  height: 4rem;
+  border: none;
+  background-color: #283048;
+  padding: 10px 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(213, 213, 213);
+}
+body .modalContainer .modal {
+  height: 60vh;
+  width: 60vw;
+  position: relative;
+  background-color: #a4a4a4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .modalContainer .modal i {
+  width: 100%;
+  text-align: right;
+  padding: 3rem;
+  font-size: 28px;
+  cursor: pointer;
+}
+body .modalContainer .modal h1 {
+  padding: 10px 0px;
+  background: #40E0D0; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+body .modalContainer .modal p {
+  width: 80%;
+  text-align: center;
+  background: #40E0D0; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+body .modalContainer .modal .btnCont {
+  padding: 3rem 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .modalContainer .modal .btnCont button {
+  padding: 10px 8rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background: #40E0D0; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body .modalContainer .modalremover {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
