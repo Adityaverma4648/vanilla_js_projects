@@ -7,16 +7,19 @@ classList.remove()
   */
   
    var modal = document.querySelector('#modal');
-   // modal.style.display = 'none';
-   modal.classList.add('modalremover');
-   
+   // modal.classList.add('modalremover');
+   var close = document.querySelector('#close')
    close.onclick = function(){
-      modal.classList.toggle('modalremover');
+      console.log('closed');
+      modal.classList.add('modalremover');
+      // modal.style.transition = "all 4s ease-in"s
    }
-
-//    btn.onclick = function(){
-//      m
-//    }
+   var btn = document.querySelector('#btn');
+   btn.onclick = function(){
+      console.log('clicked');
+      modal.classList.remove('modalremover');
+      // modal.style.transition = "all 4s ease-in"
+   }
 
 
 

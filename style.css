@@ -381,4 +381,5 @@ body .modalContainer .modal .btnCont button {
 }
 body .modalContainer .modalremover {
   display: none;
+  transition: all 0.5s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
